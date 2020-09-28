@@ -10,7 +10,7 @@ namespace Lund
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Lund();
         }
 
         protected override void OnStart()

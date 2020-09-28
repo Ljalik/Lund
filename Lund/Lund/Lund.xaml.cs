@@ -13,6 +13,7 @@ namespace Lund
     public partial class Lund : ContentPage
     {
         BoxView pea, amber, keha;
+        Button btn1, btn2, btn3;
         public Lund()
         {
             AbsoluteLayout abs = new AbsoluteLayout();
@@ -31,7 +32,26 @@ namespace Lund
             AbsoluteLayout.SetLayoutBounds(amber, new Rectangle(0.2, 0.1, 100, 100));
             AbsoluteLayout.SetLayoutFlags(amber, AbsoluteLayoutFlags.All);
             abs.Children.Add(amber);
+            btn1 = new Button { Text = "pea" };
+            btn1.Clicked += Btn1_Clicked;
+            AbsoluteLayout.SetLayoutBounds(btn1, new Rectangle(0.5, 0.8, 100, 100));
+            AbsoluteLayout.SetLayoutFlags(btn1, AbsoluteLayoutFlags.All);
+            abs.Children.Add(btn1);
             Content = abs;
+        }
+        bool flag = true;
+        private void Btn1_Clicked(object sender, EventArgs e)
+        {
+            if (flag)
+            {
+                pea.Opacity = 0;
+                flag = false;
+            }
+            else
+            {
+                pea.Opacity = 1;
+                flag = true;
+            }
         }
     }
 }

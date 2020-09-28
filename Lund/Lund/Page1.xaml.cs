@@ -10,11 +10,12 @@ using Xamarin.Forms.Xaml;
 namespace Lund
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Lund : ContentPage
+    public partial class Page1 : ContentPage
     {
         BoxView pea, amber, keha, silmad;
         Button btn1, btn2, btn3, btn4;
-        public Lund()
+
+        public Page1()
         {
             AbsoluteLayout abs = new AbsoluteLayout();
             //голова
@@ -58,5 +59,4 @@ namespace Lund
                 flag = true;
             }
         }
-    }
 }

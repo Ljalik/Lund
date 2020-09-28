@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lund.Android", "Lund\Lund.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lund.iOS", "Lund\Lund.iOS\Lund.iOS.csproj", "{2D40FB49-930D-4050-BDF1-7737201EF773}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lund", "Lund\Lund\Lund.csproj", "{822DD73A-682A-443E-80D7-17A1B34BE7C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lund", "Lund\Lund\Lund.csproj", "{822DD73A-682A-443E-80D7-17A1B34BE7C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0DC863B7-0C9C-493D-A0B4-79EE5C8D9A76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
